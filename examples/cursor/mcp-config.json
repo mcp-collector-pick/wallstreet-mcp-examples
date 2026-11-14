@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "wallstreet-master": {
+      "url": "https://mcp.apify.com/?actors=mcp_collector/wallstreet-hedgefund-suite-mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}

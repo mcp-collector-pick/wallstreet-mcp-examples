@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "wallstreet-suite": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/mcp-server",
+        "--actor",
+        "mcp_collector/wallstreet-hedgefund-suite-mcp"
+      ],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}
