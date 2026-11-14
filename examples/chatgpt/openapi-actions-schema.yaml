@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Wall Street Hedge Fund Suite API
+  description: Real-time 60-engine quantitative and macroeconomic data suite for US equities, Buffett Moat, Piotroski F-Score, and TTM Squeeze.
+  version: 1.0.0
+servers:
+  - url: https://api.apify.com/v2/acts/mcp_collector~wallstreet-hedgefund-suite-mcp
+paths:
+  /run-sync-get-dataset-items:
+    post:
+      operationId: getQuantitativeAnalysis
+      summary: Run full quantitative analysis on a US ticker
+      parameters:
+        - name: token
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Apify API Token (leave empty if using Public actor run, or provide your Apify API Token)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ticker:
+                  type: string
+                  example: NVDA
+                  description: US Stock or ETF ticker symbol (e.g. NVDA, AAPL, MSFT, TSLA, SPY)
+                mode:
+                  type: string
+                  example: full_memo
+                  description: Analysis mode (full_memo, technical, fundamental)
+      responses:
+        '200':
+          description: Successful quantitative analysis response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object

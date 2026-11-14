@@ -4,9 +4,10 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![Claude Desktop](https://img.shields.io/badge/Claude-Desktop-orange.svg)](https://claude.ai)
 [![Cursor](https://img.shields.io/badge/Cursor-IDE-purple.svg)](https://cursor.sh)
+[![ChatGPT](https://img.shields.io/badge/ChatGPT-Custom%20GPTs-teal.svg)](https://chatgpt.com)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-2024--11--05-green.svg)](https://modelcontextprotocol.io)
 
-Ready-to-use examples for connecting **60 institutional-grade quantitative & macro engines** to Claude Desktop, Cursor, Windsurf, LangChain, and CrewAI via the [Model Context Protocol (MCP)](https://modelcontextprotocol.io).
+Ready-to-use examples for connecting **60 institutional-grade quantitative & macro engines** to Claude Desktop, Cursor, Windsurf, ChatGPT (Custom GPT Actions), LangChain, and CrewAI via the [Model Context Protocol (MCP)](https://modelcontextprotocol.io).
 
 ---
 
@@ -117,6 +118,18 @@ print(response)
 
 ---
 
+### Option D: ChatGPT (Custom GPTs & OpenAI Actions)
+
+No local setup or coding required. Connect directly to ChatGPT via cloud actions:
+
+1. In ChatGPT, go to **Explore GPTs > + Create > Configure > Actions > Create new action**.
+2. Paste the schema from [`examples/chatgpt/openapi-actions-schema.yaml`](examples/chatgpt/openapi-actions-schema.yaml).
+3. Paste the system prompt from [`examples/chatgpt/custom-gpt-instructions.md`](examples/chatgpt/custom-gpt-instructions.md).
+4. Publish as **Everyone** (or private team link) — anyone on ChatGPT (including **free users!**) can now run institutional quant memos powered by your engine.
+5. See [`examples/chatgpt/README.md`](examples/chatgpt/README.md) for full guide.
+
+---
+
 ## 🔬 Benchmark: Traditional Scraping vs. MCP Suite
 
 *Reproducible test: Full 360° fundamental & technical audit on NVDA*
@@ -223,6 +236,10 @@ examples/
 ├── cursor/
 │   ├── mcp-config.json          ← Add to Cursor MCP settings
 │   └── .cursorrules             ← Drop into project root
+├── chatgpt/
+│   ├── openapi-actions-schema.yaml ← Paste into Custom GPT Actions
+│   ├── custom-gpt-instructions.md ← Paste into Custom GPT Instructions
+│   └── README.md                ← 60-second setup & free user guide
 └── python/
     ├── quick_360_memo.py        ← Simplest example (5 lines)
     └── crewai_hedgefund_agent.py ← Autonomous daily screener
