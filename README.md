@@ -39,7 +39,11 @@ Ready-to-use examples for connecting **60 institutional-grade quantitative & mac
 🎯 VERDICT: STRONG BULLISH CONVICTION | TIMEFRAME: SWING (2-6 WEEKS)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
-*(Tip: Replace with your recorded Claude Desktop screen GIF demo anytime!)*
+
+<div align="center">
+  <img src="assets/wallstreet-suite.gif" alt="Claude Desktop Wall Street Suite Live Demo" width="100%" />
+  <p><em>▲ Real-time Claude Desktop session: Executing 360° Quant Audit on NVDA via Wall Street Suite MCP (Pure MCP Mode, No Web Search).</em></p>
+</div>
 
 ---
 
