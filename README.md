@@ -68,8 +68,8 @@ This MCP suite **pre-computes all 60 quantitative indicators** server-side and s
       "command": "npx",
       "args": [
         "-y",
-        "@apify/mcp-server",
-        "--actor",
+        "@apify/actors-mcp-server",
+        "--actors",
         "mcp_collector/wallstreet-hedgefund-suite-mcp"
       ],
       "env": {

@@ -4,8 +4,8 @@
       "command": "npx",
       "args": [
         "-y",
-        "@apify/mcp-server",
-        "--actor",
+        "@apify/actors-mcp-server",
+        "--actors",
         "mcp_collector/wallstreet-hedgefund-suite-mcp"
       ],
       "env": {
