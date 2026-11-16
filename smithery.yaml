@@ -1,0 +1,21 @@
+# smithery.yaml — Smithery.ai MCP Registry Configuration
+# Root of repository: https://github.com/mcp-collector-pick/wallstreet-mcp-examples
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      APIFY_TOKEN:
+        type: string
+        description: "Your Apify API token (get one free at https://apify.com)"
+    required:
+      - APIFY_TOKEN
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "@apify/mcp-server", "--actor", "mcp_collector/wallstreet-hedgefund-suite-mcp"],
+      env: {
+        APIFY_TOKEN: config.APIFY_TOKEN
+      }
+    })
