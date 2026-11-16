@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "wallstreet-suite": {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?actors=mcp_collector/wallstreet-hedgefund-suite-mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}
