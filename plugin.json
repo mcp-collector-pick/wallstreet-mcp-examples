@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Institutional-style US equity research powered by the Wall Street Hedge Fund Suite quantitative MCP engines. Retrieves server-calculated metrics and turns them into sourced, timestamped investment memos.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Data analysis"
+        ],
+        "category": "Finance",
+        "defaultPrompt": [
+          "Run a full 360-degree institutional quant analysis on NVDA.",
+          "Assess Apple's financial health using Piotroski F-Score and Altman Z-Score.",
+          "Compare a US stock's valuation, economic moat, momentum, and institutional flows."
+        ],
+        "displayName": "Wall Street Hedge Fund Suite",
+        "longDescription": "Analyze US stocks and ETFs using the connected Wall Street Hedge Fund Suite MCP service. Retrieve server-calculated fundamental, valuation, technical, options, institutional-flow, and macro indicators, then produce a structured institutional-style investment memo with data timestamps, source limitations, and risk disclosures.",
+        "shortDescription": "Institutional quant analysis"
+      }
+    }
+  },
+  "keywords": [
+    "finance",
+    "quantitative analysis",
+    "equities",
+    "investment research",
+    "MCP",
+    "Apify"
+  ],
+  "name": "wall-street-hedge-fund-suite",
+  "repository": "https://github.com/mcp-collector-pick/wallstreet-mcp-examples",
+  "version": "0.1.1"
+}

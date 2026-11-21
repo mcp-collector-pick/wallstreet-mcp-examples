@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "wallstreet-suite": {
+      "type": "streamable-http",
+      "url": "https://wallstreet.mcp-collector.workers.dev",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "provided",
+              "clientId": "chatgpt-wallstreet-client",
+              "tokenEndpointAuthMethod": "none"
+            },
+            "authorizationServerBase": "https://wallstreet.mcp-collector.workers.dev",
+            "authorizationUrl": "https://wallstreet.mcp-collector.workers.dev/oauth/authorize",
+            "tokenUrl": "https://wallstreet.mcp-collector.workers.dev/oauth/token",
+            "resource": "https://wallstreet.mcp-collector.workers.dev"
+          }
+        }
+      }
+    }
+  }
+}
