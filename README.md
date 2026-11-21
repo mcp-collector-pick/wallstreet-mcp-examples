@@ -122,15 +122,20 @@ print(response)
 
 ---
 
-### Option D: ChatGPT (Custom GPTs & OpenAI Actions)
+### Option D: ChatGPT (Official Plugins & MCP Server — 30 seconds)
 
-No local setup or coding required. Connect directly to ChatGPT via cloud actions:
+Connect directly to ChatGPT via the official 2026 Agent Plugin and Remote MCP Gateway:
 
-1. In ChatGPT, go to **Explore GPTs > + Create > Configure > Actions > Create new action**.
-2. Paste the schema from [`examples/chatgpt/openapi-actions-schema.yaml`](examples/chatgpt/openapi-actions-schema.yaml).
-3. Paste the system prompt from [`examples/chatgpt/custom-gpt-instructions.md`](examples/chatgpt/custom-gpt-instructions.md).
-4. Publish as **Everyone** (or private team link) — anyone on ChatGPT (including **free users!**) can now run institutional quant memos powered by your engine.
-5. See [`examples/chatgpt/README.md`](examples/chatgpt/README.md) for full guide.
+1. **Add MCP Server (`Settings > MCP Servers > + Add Server`)**:
+   - **URL**: `https://wallstreet.mcp-collector.workers.dev`
+   - **Headers**: Leave completely blank (Enables OAuth 2.1 user authentication flow).
+2. **Enable Plugin (`Custom Settings > Plugins`)**:
+   - Verify `Wall Street Hedge Fund Suite` (v0.1.4) is enabled.
+3. **Execute in Chat**:
+   - Prompt: `@Wall Street Hedge Fund Suite Run a full 360-degree institutional quant analysis on NVDA.`
+   - Click the **[Authenticate]** button to link your Apify token once.
+   - Comprehensive quantitative hedge fund memo will be rendered in real-time.
+4. See [`examples/chatgpt/README.md`](examples/chatgpt/README.md) for full step-by-step walkthrough, screenshots, and troubleshooting.
 
 ---
 
