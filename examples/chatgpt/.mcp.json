@@ -12,7 +12,7 @@
               "clientId": "chatgpt-wallstreet-client",
               "tokenEndpointAuthMethod": "none"
             },
-            "authorizationServerBase": "https://wallstreet.mcp-collector.workers.dev/",
+            "authorizationServerBase": "https://wallstreet.mcp-collector.workers.dev",
             "authorizationUrl": "https://wallstreet.mcp-collector.workers.dev/oauth/authorize",
             "tokenUrl": "https://wallstreet.mcp-collector.workers.dev/oauth/token",
             "resource": "https://wallstreet.mcp-collector.workers.dev"
