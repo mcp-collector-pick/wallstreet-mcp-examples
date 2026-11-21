@@ -3,9 +3,22 @@
   "mcpServers": {
     "wallstreet-suite": {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com/?actors=mcp_collector/wallstreet-hedgefund-suite-mcp",
-      "headers": {
-        "Authorization": "Bearer YOUR_APIFY_TOKEN"
+      "url": "https://wallstreet.minsu10101010.workers.dev",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "provided",
+              "clientId": "chatgpt-wallstreet-client",
+              "tokenEndpointAuthMethod": "none"
+            },
+            "authorizationServerBase": "https://wallstreet.minsu10101010.workers.dev/",
+            "authorizationUrl": "https://wallstreet.minsu10101010.workers.dev/oauth/authorize",
+            "tokenUrl": "https://wallstreet.minsu10101010.workers.dev/oauth/token",
+            "resource": "https://wallstreet.minsu10101010.workers.dev"
+          }
+        }
       }
     }
   }
