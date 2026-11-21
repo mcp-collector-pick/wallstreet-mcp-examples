@@ -3,7 +3,7 @@
   "mcpServers": {
     "wallstreet-suite": {
       "type": "streamable-http",
-      "url": "https://wallstreet.minsu10101010.workers.dev",
+      "url": "https://wallstreet.mcp-collector.workers.dev",
       "extensions": {
         "com.openai": {
           "auth": {
@@ -13,10 +13,10 @@
               "clientId": "chatgpt-wallstreet-client",
               "tokenEndpointAuthMethod": "none"
             },
-            "authorizationServerBase": "https://wallstreet.minsu10101010.workers.dev/",
-            "authorizationUrl": "https://wallstreet.minsu10101010.workers.dev/oauth/authorize",
-            "tokenUrl": "https://wallstreet.minsu10101010.workers.dev/oauth/token",
-            "resource": "https://wallstreet.minsu10101010.workers.dev"
+            "authorizationServerBase": "https://wallstreet.mcp-collector.workers.dev/",
+            "authorizationUrl": "https://wallstreet.mcp-collector.workers.dev/oauth/authorize",
+            "tokenUrl": "https://wallstreet.mcp-collector.workers.dev/oauth/token",
+            "resource": "https://wallstreet.mcp-collector.workers.dev"
           }
         }
       }
