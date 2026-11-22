@@ -6,7 +6,7 @@
 [![Cursor](https://img.shields.io/badge/Cursor-IDE-purple.svg)](https://cursor.sh)
 [![ChatGPT](https://img.shields.io/badge/ChatGPT-Plugin%20%26%20MCP-teal.svg)](https://chatgpt.com)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-2024--11--05-green.svg)](https://modelcontextprotocol.io)
-[![M8ven Trust](https://m8ven.ai/badge/mcp/mcp-collector-pick/wallstreet-mcp-examples)](https://m8ven.ai/mcp/mcp-collector-pick/wallstreet-mcp-examples)
+[![M8ven Score](https://m8ven.ai/badge/mcp/mcp-collector-pick-wallstreet-mcp-examples-1us97n?v=8fc0f6d2c66b01728a4b35a291e6db1b)](https://m8ven.ai/mcp/mcp-collector-pick-wallstreet-mcp-examples-1us97n?s=readme)
 
 Ready-to-use examples for connecting **60 institutional-grade quantitative & macro engines** to Claude Desktop, Cursor, Windsurf, ChatGPT (Custom GPT Actions), LangChain, and CrewAI via the [Model Context Protocol (MCP)](https://modelcontextprotocol.io).
 
