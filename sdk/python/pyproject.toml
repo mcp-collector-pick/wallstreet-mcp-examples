@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "wallstreet-mcp-tools"
 version = "0.1.0"
-description = "Lightweight Python SDK for Wall Street Hedge Fund Suite via Model Context Protocol (MCP)"
+description = "Lightweight Python SDK for Wall Street Hedge Fund Suite (90+ Engines) via Model Context Protocol (MCP)"
 readme = "README.md"
 authors = [{ name = "MCP Collector", email = "mcp_collector@apify.actor" }]
 license = { text = "MIT" }

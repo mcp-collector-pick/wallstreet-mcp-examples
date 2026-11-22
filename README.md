@@ -9,7 +9,7 @@
 [![Model Context Protocol](https://img.shields.io/badge/MCP-2024--11--05-green.svg)](https://modelcontextprotocol.io)
 [![M8ven Score](https://m8ven.ai/badge/mcp/mcp-collector-pick-wallstreet-mcp-examples-1us97n?v=8fc0f6d2c66b01728a4b35a291e6db1b)](https://m8ven.ai/mcp/mcp-collector-pick-wallstreet-mcp-examples-1us97n?s=readme)
 
-Ready-to-use examples for connecting **60 institutional-grade quantitative & macro engines** to Claude Desktop, Cursor, Windsurf, ChatGPT (Custom GPT Actions), LangChain, and CrewAI via the [Model Context Protocol (MCP)](https://modelcontextprotocol.io).
+Ready-to-use examples for connecting **90+ institutional-grade quantitative & macro engines** to Claude Desktop, Cursor, Windsurf, ChatGPT (Custom GPT Actions), LangChain, and CrewAI via the [Model Context Protocol (MCP)](https://modelcontextprotocol.io).
 
 ---
 
@@ -199,7 +199,7 @@ print(f"Piotroski F-Score: {audit.get('piotroski_f_score')}/9")
 ---
 
 <details>
-<summary><strong>📦 Full 60-Engine List (click to expand)</strong></summary>
+<summary><strong>📦 Full 90+ Quantitative Engine Catalog (click to expand)</strong></summary>
 
 | # | Category | Engine Actor ID | Description |
 |---|----------|-----------------|-------------|
@@ -263,6 +263,36 @@ print(f"Piotroski F-Score: {audit.get('piotroski_f_score')}/9")
 | 58 | Force | `us-stock-force-index-elder-mcp` | Price×Volume |
 | 59 | TSI | `us-stock-true-strength-index-tsi-mcp` | Double Smoothed |
 | 60 | BOP | `us-stock-balance-of-power-bop-mcp` | Buyer/Seller Dominance |
+| 61 | Bands | `us-stock-vwap-bands-mcp` | VWAP StdDev Bands |
+| 62 | Thrust | `us-stock-elder-force-index-mcp` | Elder Force Index Volume Thrust |
+| 63 | Volatility | `us-stock-chaikin-volatility-mcp` | Chaikin Volatility Range Expansion |
+| 64 | Execution | `us-stock-twap-execution-flow-mcp` | TWAP Institutional Benchmark Flow |
+| 65 | Reversion | `us-stock-connors-rsi-reversal-mcp` | Connors RSI (CRSI) Mean Reversion |
+| 66 | Trend | `us-stock-heikin-ashi-trend-mcp` | Heikin-Ashi Smoothed Trend Filter |
+| 67 | Bands | `us-stock-rainbow-oscillator-mcp` | Rainbow MA Band Oscillator |
+| 68 | Filter | `us-stock-adaptive-laguerre-rsi-mcp` | Adaptive Laguerre Filter RSI |
+| 69 | S/R | `us-stock-pivot-points-standard-mcp` | Floor Traders Pivot Points |
+| 70 | Breakout | `us-stock-camarilla-pivot-breakout-mcp` | Camarilla Intraday S/R Breakout |
+| 71 | Exhaustion | `us-stock-demark-sequential-td9-mcp` | DeMark Sequential TD-9 Setup |
+| 72 | Trend | `us-stock-woodies-cci-trend-mcp` | Woodies CCI Trend Continuity |
+| 73 | Cycle | `us-stock-center-of-gravity-oscillator-mcp` | Ehlers Center of Gravity Oscillator |
+| 74 | Reversal | `us-stock-fisher-transform-mcp` | Ehlers Fisher Transform Reversal |
+| 75 | Adaptive | `us-stock-mesa-adaptive-moving-avg-mcp` | MESA Adaptive Moving Average |
+| 76 | Cycle | `us-stock-cyber-cycle-indicator-mcp` | Ehlers Cyber Cycle Instantaneous |
+| 77 | Breakout | `us-stock-fractal-chaos-bands-mcp` | Fractal Chaos Bands Breakout |
+| 78 | Efficiency | `us-stock-polarized-fractal-efficiency-mcp` | Polarized Fractal Efficiency |
+| 79 | Volume | `us-stock-intraday-intensity-index-mcp` | Intraday Intensity Index Volume |
+| 80 | Flow | `us-stock-price-volume-trend-pvt-mcp` | Price Volume Trend (PVT) Flow |
+| 81 | Efficiency | `us-stock-kaufman-efficiency-ratio-mcp` | Kaufman Efficiency Ratio (KER) |
+| 82 | Velocity | `us-stock-linear-regression-slope-mcp` | Linear Regression Slope Velocity |
+| 83 | Forecast | `us-stock-time-series-forecast-tsf-mcp` | Time Series Forecast (TSF) |
+| 84 | Bands | `us-stock-standard-error-bands-mcp` | Standard Error Regression Bands |
+| 85 | Microstructure | `us-stock-volume-spread-analysis-vsa-mcp` | Volume Spread Analysis (VSA) |
+| 86 | Volatility | `us-stock-relative-volatility-index-mcp` | Relative Volatility Index (RVI) |
+| 87 | Volatility | `us-stock-true-range-envelope-mcp` | Dynamic True Range Envelope |
+| 88 | Oscillator | `us-stock-percentage-price-oscillator-mcp` | Percentage Price Oscillator (PPO) |
+| 89 | Volume | `us-stock-percentage-volume-oscillator-mcp` | Percentage Volume Oscillator (PVO) |
+| 90 | Trend | `us-stock-disparity-index-mcp` | Disparity Index Moving Average |
 
 </details>
 
