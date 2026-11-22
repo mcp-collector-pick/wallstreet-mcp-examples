@@ -1,0 +1,12 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "Wall Street Hedge Fund Suite MCP",
+  "description": "60 institutional-grade quantitative & macro engines for US equities via Model Context Protocol.",
+  "maintainers": [
+    "mcp-collector-pick"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcp-collector-pick/wallstreet-mcp-examples"
+  }
+}
