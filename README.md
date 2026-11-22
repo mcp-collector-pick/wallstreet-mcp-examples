@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
+[![PyPI Version](https://img.shields.io/pypi/v/wallstreet-mcp-tools.svg)](https://pypi.org/project/wallstreet-mcp-tools/)
 [![Claude Desktop](https://img.shields.io/badge/Claude-Desktop-orange.svg)](https://claude.ai)
 [![Cursor](https://img.shields.io/badge/Cursor-IDE-purple.svg)](https://cursor.sh)
 [![ChatGPT](https://img.shields.io/badge/ChatGPT-Plugin%20%26%20MCP-teal.svg)](https://chatgpt.com)
@@ -153,12 +154,12 @@ cd examples/automation && pip install -r requirements.txt
 python daily_morning_screener.py
 ```
 
-### Option F: Python SDK (`wallstreet-mcp-tools`)
+### Option F: Python SDK (`pip install wallstreet-mcp-tools`)
 
-Install the lightweight client directly from source:
+Install the official Python client directly from PyPI:
 
 ```bash
-cd sdk/python && pip install -e .
+pip install wallstreet-mcp-tools
 ```
 
 ```python

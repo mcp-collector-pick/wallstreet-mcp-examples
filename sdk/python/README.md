@@ -6,19 +6,15 @@ Lightweight Python SDK for **Wall Street Hedge Fund Suite** on Apify via the Mod
 
 ## 📦 Installation
 
-### From Source (Current)
+### From PyPI (Recommended)
 ```bash
-git clone https://github.com/mcp-collector-pick/wallstreet-mcp-examples.git
-cd wallstreet-mcp-examples/sdk/python
-pip install -e .
+pip install wallstreet-mcp-tools
 ```
 
 ### With LangChain Support
 ```bash
-pip install -e ".[langchain]"
+pip install "wallstreet-mcp-tools[langchain]"
 ```
-
-*(Note: PyPI global distribution `pip install wallstreet-mcp-tools` is scheduled for official release in Week 4)*
 
 ---
 
