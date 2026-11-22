@@ -140,6 +140,37 @@ Connect directly to ChatGPT via the official 2026 Agent Plugin and Remote MCP Ga
 
 ---
 
+### Option E: Autonomous Agent Recipes (Cron, CrewAI & LangChain)
+
+Looking to run 24/7 automated quant research pipelines? Check the recipes in [`examples/automation/`](examples/automation/):
+
+- **Daily Morning S&P 500 Screener** (`daily_morning_screener.py`): Automated pre-market audit across watchlist + Slack alerts.
+- **3-Agent Autonomous Hedge Fund Team** (`crewai_hedgefund_team.py`): Forensic Analyst + Risk Officer + CIO in CrewAI.
+- **Forensic Anomaly Sentinel** (`langchain_anomaly_sentinel.py`): Real-time monitor for Beneish earnings manipulation and Altman Z distress.
+
+```bash
+cd examples/automation && pip install -r requirements.txt
+python daily_morning_screener.py
+```
+
+### Option F: Python SDK (`wallstreet-mcp-tools`)
+
+Install the lightweight client directly from source:
+
+```bash
+cd sdk/python && pip install -e .
+```
+
+```python
+from wallstreet_mcp import WallStreetClient
+
+client = WallStreetClient()
+audit = client.audit('NVDA')
+print(f"Piotroski F-Score: {audit.get('piotroski_f_score')}/9")
+```
+
+---
+
 ## 🔬 Benchmark: Traditional Scraping vs. MCP Suite
 
 *Reproducible test: Full 360° fundamental & technical audit on NVDA*
@@ -236,23 +267,36 @@ Connect directly to ChatGPT via the official 2026 Agent Plugin and Remote MCP Ga
 
 ---
 
-## 📁 Examples Directory
+## 📁 Directory Structure & Key Files
 
 ```
 examples/
+├── automation/
+│   ├── daily_morning_screener.py   ← Cron-driven S&P 500 morning audit + Slack
+│   ├── crewai_hedgefund_team.py    ← 3-agent CrewAI research team
+│   ├── langchain_anomaly_sentinel.py ← Forensic red flag sentinel
+│   ├── requirements.txt            ← Dependency manifest
+│   └── README.md                   ← Automation recipes guide
 ├── claude-desktop/
-│   ├── config.json              ← Copy to claude_desktop_config.json
-│   └── custom-instructions.md   ← Paste into Claude Settings
+│   ├── config.json                 ← Copy to claude_desktop_config.json
+│   └── custom-instructions.md      ← Paste into Claude Settings
 ├── cursor/
-│   ├── mcp-config.json          ← Add to Cursor MCP settings
-│   └── .cursorrules             ← Drop into project root
+│   ├── mcp-config.json             ← Add to Cursor MCP settings
+│   └── .cursorrules                ← Institutional quant ruleset
 ├── chatgpt/
 │   ├── openapi-actions-schema.yaml ← Paste into Custom GPT Actions
-│   ├── custom-gpt-instructions.md ← Paste into Custom GPT Instructions
-│   └── README.md                ← 60-second setup & free user guide
+│   ├── custom-gpt-instructions.md  ← Paste into Custom GPT Instructions
+│   └── README.md                   ← 60-second setup & OAuth guide
 └── python/
-    ├── quick_360_memo.py        ← Simplest example (5 lines)
-    └── crewai_hedgefund_agent.py ← Autonomous daily screener
+    ├── quick_360_memo.py           ← Simplest example (5 lines)
+    └── crewai_hedgefund_agent.py   ← Autonomous daily screener
+sdk/
+└── python/                         ← Lightweight Python SDK (wallstreet-mcp-tools)
+    ├── wallstreet_mcp/             ← Direct Python client
+    └── pyproject.toml              ← pip installable package
+.cursor/
+└── rules/
+    └── wallstreet-quant-analyst.mdc ← Official Cursor MDC ruleset
 ```
 
 ---
